@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengelolaan Event</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pengelolaan Event</h1>
+
+        <!-- Form untuk membuat event -->
+        <div class="form-container">
+            <h2>Buat Event Baru</h2>
+            <input type="text" id="event-name" placeholder="Nama Event" class="form-input" />
+            <textarea id="event-description" placeholder="Deskripsi Event" class="form-input"></textarea>
+            <input type="date" id="event-date" class="form-input" />
+            <button onclick="createEvent()" class="btn">Buat Event</button>
+        </div>
+
+        <!-- Daftar event -->
+        <div class="event-list-container">
+            <h2>Daftar Event</h2>
+            <div id="event-list">
+                <!-- Event akan muncul di sini -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
